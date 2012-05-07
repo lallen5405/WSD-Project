@@ -1,3 +1,214 @@
-<!--
-	This is my main page for TampaBayJams, my project for WSD-Online.
---> 
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TampaBay Jamz. Your local music connection!</title>
+		<meta name="description" content="Britt and Allison's Wedding Invitation">
+		<meta name="author" content="Terry Allen">
+	</head>
+	<body>
+		<header>
+			<h1>TampaBay Jamz. Your local music connection!</h1>
+			<img src ="images/logo.jpg" height="167" width="318" alt="TampaBay Jamz..." title="Tampa's local music connection!"/>
+			<nav>
+				<ul>
+					<li><a href="index.html#about_us" title="About Us">About Us</a></li>						<!-- javascript to be used to "scroll" to section of page -->
+					<li><a href="index.html#sign_up" title="Sign Up">Sign Up</a></li>
+					<li><a href="index.html#upcoming_shows" title="Upcoming Shows">Upcoming Shows</a></li>
+					<li><a href="index.html#gallery" title="Gallery">Gallery</a></li>
+					<li><a href="index.html#musicians_wanted" title="Musicians Wanted">Musicians Wanted</a></li>
+					<li><a href="index.html#band_directory" title="Band Directory">Band Directory</a></li>
+				</ul>
+			</nav>
+			<aside>														<!--  Login to be at top right of header -->
+				<form name="login" action="index.html" method="post">
+					<fieldset>
+						<legend>Sign-In</legend>
+						<label for="username">Username:</label>
+						<input type="text" name="username" placeholder=""/>
+						<label for="password">Password</label>
+						<input type="password" name="password" placeholder=""/>
+						<label for="remember_me">Remember Me!</label>
+						<input type="checkbox" name="remember_me"/>
+						<input type="submit" name="login_submit" value="Login" />
+					</fieldset>
+				</form>
+				<span>
+					<a href="forgot_username.html">Forgot Username / Password?</a>
+					<a href="index.html#sign_up">Sign Me Up!</a>
+				</span>
+			</aside>
+		</header>					<!-- END: Header -->
+		<section id="about_us">
+			<header>
+				<h1>About Us</h1>
+				<h2>Tampa's Local Music at Your Fingertips</h2>
+			</header>
+			<article>
+				<img src="images/instruments.jpg" height="400" width="600" alt="Musical Instruments" title="A little bit about us..."/>
+				<p><strong>TampaBay Jamz</strong> is the easiest way to keep your fingers on the pulse of Tampa's thriving local music scene. Wether you are a local band trying to get exposure, or new to the Tampa area and looking to get connected with great music, we can help. The best part? It's <em>free!</em></p>
+				<div class="about_us_benefits">
+					<h3>Musicians</h3>
+					<ol>
+						<li>Upload your Press Kit or create one for free!</li>
+						<li>Get information for local venues to play your music!</li>
+						<li>Publish photos from your shows for your fans to see!</li>
+						<li>Connect with other musicians in the area to fill that empty spot!</li>
+					</ol>
+				</div>
+				<div class="about_us_benefits">
+					<h3>Music Lovers</h3>
+					<ol>
+						<li>See upcoming shows and venues in your area!</li>
+						<li>Discover new great local music!</li>
+						<li>Keep in touch with your favorite local musicians!</li>
+						<li>Upload pictures of your favorite local bands to their fanpage!</li>
+					</ol>
+				</div>
+				<aside>
+					<p>TampaBay Jamz was created by <strong>Lee Allen</strong>, a Tampa Area musician turned web developer, to help assist some talented friends get more gigs. It has since evolved into Tampa's goto source for local music!</p> 
+				</aside>
+			</article>
+		</section>								<!-- END: About Us -->
+		<section id="sign_up">
+			<header>
+				<h1>Sign-Up</h1>
+				<h2>It's easy, and it's <em>FREE!</em></h2>
+			</header>
+			<article>
+				<img src="images/musician.jpg" height="396" width="279" alt="Musician" title="It's fast, easy, and FREE!"/>
+				<p>Signing up is easy, just fill out the form below to get started! Once you have signed up, you can create your profile, build your Press Kit and Fan Page, or you can just start browsing and posting to our forum. It's your site, you make it what you want it!</p>
+				<aside>
+					<p>Be sure to sign up for our newsletter when you fill out the form. Our weekly newsletter gives you access to "inside information" including give aways from your favorite bands, and great information on other promotions availble in your area.</p> 
+				</aside>
+				<form name="sign_up" action="sign_up.php" method="post">
+					<fieldset>
+						<legend>Sign-Up</legend>
+						<label for="name">Name:</label>
+						<input type="text" name="name" placeholder="ex. John Smith"/>
+						<label for="email">Email:</label>
+						<input type="text" name="email" placeholder="ex. John@gmail.com"/>
+						<label for="username">Desired Username:</label>
+						<input type="text" name="username" placeholder="ex. AxeShredder"/>
+						<label for="password">Password:</label>
+						<input type="password" name="password"/>
+						<label for="newsletter">Receive our Newsletter:</label>
+						<input type="checkbox" checked="checked" name="newsletter"/>
+						<input type="submit" name="sign_up_submit" value="Sign Up" />
+					</fieldset>
+				</form>
+			</article>
+		</section>						<!-- END: Sign Up -->
+		<section id="upcoming_shows">
+			<header>
+				<h1>Upcoming Shows</h1>
+				<h2>Never miss another show!</h2>
+			</header>
+			<article>
+				<img src="images/marquee.jpg" height="300" width="400" alt="Tonight Only" title="Never miss a show..."/>
+				<p>Sign up to get access to our full list of upcoming events, or to add your own show to our list!</p>
+				<table>
+					<tr>
+						<td><strong>Date</strong></td>
+						<td><strong>Band</strong></td>
+						<td><strong>Venue</strong></td>
+						<td><strong>Time</strong></td>
+					</tr>
+					<tr>
+						<td>6/6</td>								<!-- Upcoming events to be updated via PHP/mySQL -->
+						<td>Erector Set</td>
+						<td>The Elbow Room</td>
+						<td>7:00</td>
+					</tr>
+					<tr>
+						<td>6/7</td>
+						<td>Kid Kamelion</td>
+						<td>The Brass Mug</td>
+						<td>9:00</td>
+					</tr>
+					<tr>
+						<td>6/8</td>
+						<td>Cygnus X2</td>
+						<td>Janus Live</td>
+						<td>8:30</td>
+					</tr>
+				</table>
+			</article>
+		</section>							<!-- END: Upcoming Shows -->
+		<section id="gallery">
+			<header>
+				<h1>Photo Gallery</h1>
+				<h2>Local Musicians doing what they do...</h2>
+			</header>
+			<article>
+				<p>Post pictures from you latest gig, or upload images you took of your favorite band directly to their Fan Page and post comments on others pics. It's easy and it's free! What more could you ask for?</p>
+				<div id="gallery_container">				<!-- Images to be added dynamically via PHP / mySQL. Current images are placeholders -->
+					<ul>							
+						<li><href="images/gallery/image1.jpg" title="Image 1"><img src="images/gallery/image1.jpg" height="100" width="100" alt="Image 1" title="Image 1"/></a></li>
+						<li><href="images/gallery/image2.jpg" title="Image 2"><img src="images/gallery/image2.jpg" height="100" width="100" alt="Image 2" title="Image 2"/></a></li>
+						<li><href="images/gallery/image3.jpg" title="Image 3"><img src="images/gallery/image3.jpg" height="100" width="100" alt="Image 3" title="Image 3"/></a></li>
+						<li><href="images/gallery/image4.jpg" title="Image 4"><img src="images/gallery/image4.jpg" height="100" width="100" alt="Image 4" title="Image 4"/></a></li>
+						<li><href="images/gallery/image5.jpg" title="Image 5"><img src="images/gallery/image5.jpg" height="100" width="100" alt="Image 5" title="Image 5"/></a></li>
+						<li><href="images/gallery/image6.jpg" title="Image 6"><img src="images/gallery/image6.jpg" height="100" width="100" alt="Image 6" title="Image 6"/></a></li>
+					</ul>
+				</div>
+			</article>
+			<footer></footer>
+		</section>								<!-- END: Gallery -->
+		<section id="musicians_wanted">
+			<header>
+				<h1>Musicians Wanted</h1>
+				<h2>Good help is <em>not</em> hard to find!</h2>
+			</header>
+			<article>
+				<img src="images/drums.jpg" height="500" width="300" alt="Empty drumset." title="Get connected..."/>
+				<p>Is that pesky drummer still not showing up to rehearsal? Don't buy a drum machine, just look here! New to the Tampa area and looking to jam? This is the place to find your next band! Sign up to see who needs help, and who is available!</p>
+			</article>
+		</section>								<!-- END: Musicians Wanted -->
+		<section id="band_directory">
+			<header>
+				<h1>Band Directory</h1>
+				<h2>Who's who in the Tampa music scene!</h2>
+			</header>
+			<article>
+				<img src="images/singer.jpg" height="327" width="300" alt="Female Vocalist." title="Get connected..."/>
+				<p>Our full list includes many of Tampa's most popular local musicians. Here you can connect with you favorite local bands, see how they stack up in popularity, and vote to take them to the top of our list. Can't remember the name of that band you saw play the other night? Chances are you will find them here!</p>
+				<table>
+					<tr>
+						<td><strong>Band</strong></td>
+						<td><strong>Location</strong></td>
+						<td><strong>Genre</strong></td>
+					</tr>
+					<tr>
+						<td>Lee Allen</td>								<!-- Directory to be dynamically generated vis PHP/mySQL and sorted by popularity -->
+						<td>Tampa, FL</td>
+						<td>Acoustic Rock</td>
+					</tr>
+					<tr>
+						<td>Cygnus X2</td>
+						<td>St. Pete Beach, FL</td>
+						<td>Reggae</td>
+					</tr>
+					<tr>
+						<td>Erector Set</td>
+						<td>Clearwater, FL</td>
+						<td>Industrial</td>
+					</tr>
+				</table>
+			</article>
+		</section>										<!-- END: Band Directory -->
+		<footer>
+			<span id="copy">&copy;2012 Terry Allen. All Rights Reserved. Created for WSD-Online at Fullsail.</span>
+			<nav>
+				<ul>
+					<li><a href="index.html#about_us" title="About Us">About Us</a></li>
+					<li><a href="index.html#sign_up" title="Sign Up">Sign Up</a></li>
+					<li><a href="index.html#upcoming_shows" title="Upcoming Shows">Upcoming Shows</a></li>
+					<li><a href="index.html#gallery" title="Gallery">Gallery</a></li>
+					<li><a href="index.html#musicians_wanted" title="Musicians Wanted">Musicians Wanted</a></li>
+					<li><a href="index.html#band_directory" title="Band Directory">Band Directory</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
