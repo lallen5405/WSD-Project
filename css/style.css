@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License:none (public domain)
+*/
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;color:#ffffff;background:#000 url('../images/black_leather.jpg') top left repeat fixed;}
+ul{list-style:none;}
+ol{text-align:justify;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/******************************
+END:CSS Reset
+******************************/
+
+h1,h2,h3{font-family:'Indie Flower',cursive;margin:0 0 0 2%;text-shadow:1px 1px 0 #c1c1c1;}
+h1{font-size:3em;}
+h2{font-size:2.5em;}
+h3{font-size:2em;}
+p{font-family:'Exo',sans-serif;font-size:1.3em;text-indent:2%;margin:3% 0;line-height:1.5em;}
+p.left{width:40%;margin-left:2%;}
+p.right{float:right;width:40%;margin-right:6.5%}
+header.right{float:right;margin-right:2%;}
+hr{margin:0;color:rgba(255,255,255,.8);-webkit-box-shadow:0px 4px 4px 3px rgba(0,0,0,.6);box-shadow:0px 4px 4px 3px rgba(0,0,0,.6);}
+em{color:#f48632;}
+strong{color:#f0313b;text-shadow:1px 2px 2px #000;}
+legend{font-family:'Indie Flower',cursive;color:#f4b132;margin-top:2%;background:none;}
+fieldset{border:1px solid rgba(150,150,150,.6);border-right:none;-webkit-border-radius:5px 0px 0px 5px;border-radius:5px 0px 0px 5px;margin-top:7%;padding-left:5%;}
+label{float:left;clear:both;font-family:'Exo',sans-serif;}
+input{margin-bottom:2%;float:left;clear:both;-webkit-border-radius:5px;border-radius:5px;}
+input[type="checkbox"]{clear:none;}
+section img{float:right;max-width:100%;margin:0 10%;}
+article{width:45%;margin:2%;}
+section header{margin:5% 0 0 2%;}
+aside{float:right;width:30%;padding:2%;margin:0 5%;}
+#header{background:rgba(0,0,0,.5);overflow:hidden;}
+#logo{width:22.083333333333%;margin:0;padding:0;float:left;}
+#logo a img{max-width:100%;opacity:.9;}
+#slogan{width:57.916666666667%;float:left;margin:0;padding:0;}
+#slogan h2{width:65%;float:right;text-align:right;margin:3% 5% 0 0;font-size:3.5em;}
+#login{width:20%;float:left;margin:0;padding:0;}
+#login input[type="text"],#login input[type="password"]{width:90%;}
+#login span{float:left;clear:both;margin-bottom:2%;font-size:.9em;}
+#login span a{color:#1f968d;}
+#login span a:hover{color:#2d706c;text-decoration:none;}
+#top_nav ul{width:98%;margin:0 0 5% 0;padding:1%;background:#000000;/* Old browsers */
+background:-moz-linear-gradient(top,#000000 0%,#0c0c0c 1%,#0a0a0a 39%,#2b2b2b 75%,#000000 100%);/* FF3.6+ */
+background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#000000),color-stop(1%,#0c0c0c),color-stop(39%,#0a0a0a),color-stop(75%,#2b2b2b),color-stop(100%,#000000));/* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top,#000000 0%,#0c0c0c 1%,#0a0a0a 39%,#2b2b2b 75%,#000000 100%);/* Chrome10+,Safari5.1+ */
+background:-o-linear-gradient(top,#000000 0%,#0c0c0c 1%,#0a0a0a 39%,#2b2b2b 75%,#000000 100%);/* Opera 11.10+ */
+background:-ms-linear-gradient(top,#000000 0%,#0c0c0c 1%,#0a0a0a 39%,#2b2b2b 75%,#000000 100%);/* IE10+ */
+background:linear-gradient(top,#000000 0%,#0c0c0c 1%,#0a0a0a 39%,#2b2b2b 75%,#000000 100%);/* W3C */
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000',endColorstr='#000000',GradientType=0 );/* IE6-9 */
+-webkit-box-shadow:0px 4px 4px 3px rgba(0,0,0,.6);box-shadow:0px 4px 4px 3px rgba(0,0,0,.6);}
+#top_nav ul li{display:inline;list-style-type:none;margin:0 3% 0 0;padding:0;font-family:'Exo',sans-serif;font-size:1.5em;}
+#top_nav ul li a{color:rgba(255,255,255,.8);text-decoration:none;}
+nav ul li a:hover{color:rgba(255,255,255,1);}
+.page_section{height:875px;padding:0;margin:0 auto;width:100%;position:relative;border-bottom:1px solid rgba(0,0,0,0.4);}
+.about_us_benefits{width:20%;float:left;margin:5% 0 5% 8%;}
+.about_us_benefits li{font-family:'Exo',sans-serif;font-size:1em;}
+.about_us_benefits h3{font-size:3em;font-weight:bold;text-decoration:underline;margin-left:0;}
+#sign_up{background:url('../images/black_mesh.jpg') top left no-repeat;padding:0;}
+#sign_up h1,#sign_up h2{width:40%;}
+#sign_up h1{margin-top:5.5%;}
+#sign_up p.left{margin-left:5%;width:50%;position:relative;top:5%;}
+#sign_up aside{float:left;margin:-4.5% 10% 2.5% 5%;background:rgba(244,234,50,.3);position:relative;top:5%;left:-5%;z-index:1}
+#sign_up img{float:right;margin:2% 18% 0 0;}
+#sign_up img.bottom{margin-top:-12%;margin-right:17.2%;}
+#sign_up #form_container{position:relative;width:17.2%;padding:1%;float:left;margin:4.5% 0 0 2%;background:rgba(31,150,141,.6);z-index:2;}
+#form_container label{margin:1%;}
+#form_container form input[type="text"],#form_container input[type="password"]{width:98%;margin-bottom:6%;}
+#form_container form input[type="submit"]{margin-top:6%;}
+#form_container h3{font-size:2.2em;margin-bottom:8%;}
+#upcoming_shows_gallery{background:url('../images/black_diamond.jpg') 0 0 repeat fixed;padding-top:3%;}
+#upcoming_shows h1{margin-top:2%;}
+#musicians_wanted_directory{height:675px;}
+table{float:right;margin-right:2%;width:45%;clear:right;font-family:'Exo',sans-serif;text-align:center;font-size:1.5em;line-height:2em;background:rgba(255,255,255,.1);text-shadow:1px 1px 1px #000;overflow:hidden;}
+.table_left{float:left;margin:0 0 0 2%;}
+table tr:hover{background:rgba(255,255,255,.3);}
+#upcoming_shows,#upcoming_shows_gallery h1{float:right;margin-right:2%;}
+#upcoming_shows p{margin-top:-2%;}
+#gallery_container{float:right;clear:both;width:35.3%;margin-top:3%;margin-right:7%;}
+#gallery_container ul li{float:left;margin-top:4%;opacity:.7;}
+#gallery_container ul li:hover{opacity:1;}
+#gallery h1,#gallery h2{float:left;margin-left:2%;margin-top:2%;}
+#gallery p{float:left;}
+#band_directory table{margin-top:14%;}
+footer{width:100%;position:absolute;bottom:0;padding:.5% 0;background:rgba(0,0,0,.9);overflow:hidden;position:relative;z-index:3;}
+footer span{color:rgba(255,255,255,.7);}
+footer ul{float:right;margin-right:2%;}
+footer ul li{display:inline;}
+footer ul li a{color:rgba(150,150,150,.9);text-decoration:none;}
+footer ul li a:hover{color:rgba(255,255,255,1);}
+/***************************
+Non-semantic effects
+***************************/
+.clearFloat{clear:both}
+.dropshadow{-webkit-box-shadow:0px 4px 4px 3px rgba(0,0,0,.6);box-shadow:0px 4px 4px 3px rgba(0,0,0,.6);}
+.rounded{-webkit-border-radius:5px;border-radius:5px;}
