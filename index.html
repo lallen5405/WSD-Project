@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>TampaBay Jamz. Your local music connection!</title>
-		<meta name="description" content="Britt and Allison's Wedding Invitation">
+		<meta name="description" content="Tampa Bay's Local Music Connection">
 		<meta name="author" content="Terry Allen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Exo:400,900' rel='stylesheet' type='text/css'>
 	</head>
@@ -47,7 +48,7 @@
 			</nav>
 		</div>
 		<section id="about_us" class="page_section">
-			<img src="images/instruments.jpg" alt="Musical Instruments" title="A little bit about us..."/>
+			<div id="instruments_container"><img src="images/instruments.jpg" alt="Musical Instruments" title="A little bit about us..."/></div>
 			<article>
 				<header>
 					<h1>About Us</h1>
@@ -85,7 +86,7 @@
 			</div>
 		</section>
 		<section id="sign_up" class="page_section">
-			<img src="images/musician.jpg" alt="Musician" title="It's fast, easy, and FREE!"/>
+			<div id="musician_container"><img src="images/musician.jpg" alt="Musician" title="It's fast, easy, and FREE!"/></div>
 			<p class="left">Signing up is easy, just fill out the form below to get started! Once you have signed up, you can create your profile, build your Press Kit and Fan Page, or you can just start browsing and posting to our forum. It's your site, you make it what you want it!</p>
 			<h1>Sign-Up</h1>
 			<h2>It's easy, and it's <em>FREE!</em></h2>	
@@ -109,7 +110,7 @@
 			<aside class="rounded dropshadow">
 				<p>Be sure to sign up for our newsletter when you fill out the form. Our weekly newsletter gives you access to "inside information" including give aways from your favorite bands, and great information on other promotions available in your area.</p> 
 			</aside>
-			<img class="bottom" src="images/singer.jpg" alt="Female Vocalist." title="Get connected..."/>
+			<div id="singer_container"><img src="images/singer.jpg" alt="Female Vocalist." title="Get connected..."/></div>
 		</section>						
 		<section id="upcoming_shows_gallery" class="page_section">
 			<div id="upcoming_shows">	
@@ -148,7 +149,12 @@
 				<p class="left">Sign up to get access to our full list of upcoming events, or to add your own show to our list!</p>
 				<hr/>
 			</div>
-			<div id="gallery">
+			<div id="gallery">						<!-- Moved location of header and <p> to correct semantic mistakes. -->
+				<header>
+					<h1>Photo Gallery</h1>
+					<h2>Local Musicians doing what they do...</h2>
+				</header>
+				<p class="left">Post pictures from you latest gig, or upload images you took of your favorite band directly to their Fan Page and post comments on others pics. It's easy and it's free! What more could you ask for?</p>
 				<div id="gallery_container">				
 					<ul>							
 						<li><a href="images/gallery/image1.jpg" title="Image 1"><img src="images/gallery/image1.jpg" height="100" width="100" alt="Image 1" title="Image 1"/></a></li>
@@ -160,11 +166,6 @@
 						<li><a href="images/gallery/image7.jpg" title="Image 7"><img src="images/gallery/image7.jpg" height="100" width="100" alt="Image 7" title="Image 6"/></a></li><li><a href="images/gallery/image8.jpg" title="Image 8"><img src="images/gallery/image8.jpg" height="100" width="100" alt="Image 8" title="Image 6"/></a></li>
 					</ul> 
 				</div>
-				<header>
-					<h1>Photo Gallery</h1>
-					<h2>Local Musicians doing what they do...</h2>
-				</header>
-				<p class="left">Post pictures from you latest gig, or upload images you took of your favorite band directly to their Fan Page and post comments on others pics. It's easy and it's free! What more could you ask for?</p>
 			</div>
 		</section>								
 		<section id="musicians_wanted_directory" class="page_section">
@@ -175,7 +176,13 @@
 			<div id="musicians_wanted">
 				<p class="left">Is that pesky drummer still not showing up to rehearsal? Don't buy a drum machine, just look here! New to the Tampa area and looking to jam? This is the place to find your next band! Sign up to see who needs help, and who is available!</p>
 			</div>
+			
 			<div id="band_directory">
+				<header class="right">
+					<h1>Band Directory</h1>
+					<h2>Who's who in the Tampa music scene!</h2>
+				</header>
+				<p class="right">Our full list includes many of Tampa's most popular local musicians. Here you can connect with you favorite local bands, see how they stack up in popularity, and vote to take them to the top of our list. Can't remember the name of that band you saw play the other night? Chances are you will find them here!</p>
 				<table class="table_left rounded dropshadow">
 					<tr>
 						<td><strong>Band</strong></td>
@@ -198,11 +205,7 @@
 						<td>Industrial</td>
 					</tr>
 				</table>
-				<header class="right">
-					<h1>Band Directory</h1>
-					<h2>Who's who in the Tampa music scene!</h2>
-				</header>
-				<p class="right">Our full list includes many of Tampa's most popular local musicians. Here you can connect with you favorite local bands, see how they stack up in popularity, and vote to take them to the top of our list. Can't remember the name of that band you saw play the other night? Chances are you will find them here!</p>
+				
 				</div>
 		</section>										
 		<footer>
