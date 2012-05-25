@@ -43,7 +43,8 @@ strong{color:#f0313b;text-shadow:1px 2px 2px #000;}
 legend{font-family:'Indie Flower',cursive;color:#f4b132;margin-top:2%;background:none;}
 fieldset{border:1px solid rgba(150,150,150,.6);border-right:none;-webkit-border-radius:5px 0px 0px 5px;border-radius:5px 0px 0px 5px;margin-top:7%;padding-left:5%;}
 label{float:left;clear:both;font-family:'Exo',sans-serif;}
-input{margin-bottom:2%;float:left;clear:both;-webkit-border-radius:5px;border-radius:5px;}
+input,select{margin-bottom:2%;float:left;clear:both;-webkit-border-radius:5px;border-radius:5px;}
+
 input[type="checkbox"]{clear:none;}
 article{width:45%;margin:2%;}
 section header{margin:5% 0 0 2%;}
@@ -70,6 +71,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000',endCo
 #top_nav ul li{display:inline;list-style-type:none;margin:0 2% 0 0;padding:0;font-family:'Exo',sans-serif;font-size:1.5em;}
 #top_nav ul li a{color:rgba(255,255,255,.8);text-decoration:none;padding:0 1%;}
 #top_nav ul li a:hover{background:rgba(255,255,255,.6);color:#f4b132;text-shadow:1px 1px 0 #000000;}
+#about_us{height:700px;}
 .page_section{height:875px;padding:0;margin:0 auto;width:100%;position:relative;border-bottom:1px solid rgba(0,0,0,0.4);}
 .about_us_benefits{width:20%;float:left;margin:5% 0 5% 8%;}
 .about_us_benefits li{font-family:'Exo',sans-serif;font-size:1em;}
@@ -84,7 +86,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000',endCo
 #sign_up aside{float:left;margin:4.5% 10% 2.5% 5%;background:rgba(244,234,50,.3);position:relative;top:5%;left:-5%;z-index:1}
 #sign_up #form_container{position:relative;width:17.2%;padding:1%;float:left;margin:4.5% 0 0 2%;background:rgba(31,150,141,.6);z-index:2;}
 #form_container label{margin:1%;}
-#form_container form input[type="text"],#form_container input[type="password"]{width:98%;margin-bottom:6%;}
+#form_container form input[type="text"],#form_container input[type="password"],select{width:98%;margin-bottom:6%;}
 #form_container form input[type="submit"]{margin-top:6%;}
 #form_container h3{font-size:2.2em;margin-bottom:8%;}
 #upcoming_shows_gallery{background:url('../images/black_diamond.jpg') 0 0 repeat fixed;padding-top:3%;}
@@ -123,6 +125,8 @@ p{font-size:1.1em;}
 #gallery_container{width:55%;margin-right:0;}
 table{font-size:1.1em;}
 footer{font-size:.8em;}
+#sign_up{height:800px;}
+
 }
 @media screen and (min-width:480px) and (max-width:767px){#slogan h2{font-size:2em;}
 #top_nav ul li{font-size:1em;}
@@ -147,16 +151,21 @@ p{font-size:1em;}
 footer nav ul{display:none;}
 #login label{font-size:.8em;}
 #login span{display:none;}
+#sign_up{height:700px;}
+
 }
 @media screen and (max-width:479px){article,p,p.left,p.right{font-size:.8em;width:90%;float:left;clear:both;}
 p.left,p.right{margin-top:2%;}
 #top_nav ul li{display:block;width:100%;margin-bottom:2%;}
 #top_nav ul li a{width:98%;}
+#about_us{height:700px;}
+#sign_up{height:600px;}
+#upcoming_shows_gallery{height:650px;}
 #instruments_container,#musician_container,#singer_container{display:none;}
-#login{display:none;}
-#logo{width:40%;}
-#slogan{width:60%;}
-#slogan h2{width:90%;font-size:1.4em;margin-top:5%;}
+#login{float:right;width:40%;position:absolute;top:0;right:0;}
+#logo{width:40%;clear:left;}
+#slogan{width:60%;clear:left;margin-bottom:1%;}
+#slogan h2{width:90%;font-size:1.4em;margin:1.5% 0;text-align:left;padding:0;}
 .about_us_benefits{float:none;width:90%;}
 #sign_up p.left{float:none;width:90%;}
 #sign_up h1,#sign_up h2{width:90%;}
